@@ -1,0 +1,142 @@
+.cartPage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background: #fefae0;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #283618;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.empty {
+  font-size: 1.2rem;
+  color: #606c38;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 18px;
+  background: white;
+  border: 1px solid rgba(96, 108, 56, 0.3);
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(40, 54, 24, 0.15);
+}
+
+.image {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fefae0;
+  padding: 8px;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #283618;
+  margin-bottom: 4px;
+}
+
+.price {
+  font-size: 1.1rem;
+  color: #bc6c25;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.qtyControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qtyControls button {
+  background: #dda15e;
+  border: none;
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.qtyControls button:hover {
+  background: #bc6c25;
+}
+
+.qtyControls span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #283618;
+}
+
+.qtyControls .removeBtn {
+  background: #d1495b;
+}
+
+.qtyControls .removeBtn:hover {
+  background: #8f3232;
+}
+
+.qtyControls .removeIcon {
+  color: white;
+}
+
+.total {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #283618;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .info {
+    align-items: center;
+  }
+
+  .qtyControls {
+    justify-content: center;
+  }
+}

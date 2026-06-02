@@ -1,0 +1,14 @@
+.footer {
+  width: 100%;
+  background: rgba(254, 250, 224, 0.9);
+  backdrop-filter: blur(8px);
+
+  border-top: 1px solid rgba(96, 108, 56, 0.25);
+
+  padding: 16px 0;
+  text-align: center;
+
+  color: #283618;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

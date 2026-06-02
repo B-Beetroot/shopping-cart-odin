@@ -1,16 +1,18 @@
-# React + Vite
+# Shopping Cart — React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple multi-page shopping cart built with React.  
+The app includes a home page, a shop page that fetches products from the FakeStore API, and a cart page where users can manage items they’ve added.
 
-Currently, two official plugins are available:
+This project is based on the assignment from The Odin Project:  
+https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Navigation bar visible on all pages
+- Live cart item count that updates as users add or remove items (using a custom `useCart` hook built on React’s `useContext`)
+- Product cards with quantity input, increment/decrement buttons, and an Add To Cart button
+- Cart page with full quantity control and item removal
+- Styled using CSS Modules
+- Tested with React Testing Library
